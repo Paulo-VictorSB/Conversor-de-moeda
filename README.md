@@ -1,6 +1,6 @@
 # Conversor de Moedas Moderno
 
-Este é um conversor de moedas moderno e responsivo, desenvolvido com **Bootstrap** para o design e utilizando a API [ExchangeRates API](https://manage.exchangeratesapi.io/) para obter as taxas de câmbio em tempo real.
+Este é um conversor de moedas moderno e responsivo, desenvolvido com **Bootstrap** **FontAewsome** para o design e utilizando a API [ExchangeRates API](https://manage.exchangeratesapi.io/) para obter as taxas de câmbio em tempo real.
 
 ## 📋 Funcionalidades
 

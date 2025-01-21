@@ -16,7 +16,7 @@ const submit = document.querySelector('#submit')
 const swapButton = document.querySelector('#swapButton')
 
 // Sua chave API
-const APIkey = ""
+const APIkey = "4b1fedcdf87f5a04dd6838a6c1343110"
 
 async function ExchangeGeratesApi() {
 

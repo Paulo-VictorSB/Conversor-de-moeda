@@ -6,7 +6,7 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.918);
     z-index: 2;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
 }

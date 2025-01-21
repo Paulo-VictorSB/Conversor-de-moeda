@@ -19,6 +19,7 @@
 
 <body>
 
+    <!-- Tela de loading caso for a primeira vez de requisição da api -->
     <div class="awaitApi">
         <div class="loader">
             <div></div>
@@ -33,7 +34,7 @@
                 <div class="card shadow-lg border-0">
                     <div class="card-body">
                         <h3 class="text-center mb-4">Conversor de Moedas</h3>
-                        <form>
+                        <div class="form">
                             <!-- Campo para inserir o valor -->
                             <div class="mb-3">
                                 <label for="inputValue" class="form-label">Valor</label>
@@ -46,8 +47,7 @@
                                 <div class="col-5">
                                     <label for="fromCurrency" class="form-label">De</label>
                                     <select class="form-select" id="fromCurrency">
-                                        <option selected>Escolha a moeda</option>
-                                        <!-- Adicione mais opções conforme necessário -->
+                                        <option selected value="">Escolha a moeda</option>
                                     </select>
                                 </div>
 
@@ -63,16 +63,21 @@
                                     <label for="toCurrency" class="form-label">Para</label>
                                     <select class="form-select" id="toCurrency">
                                         <option selected>Escolha a moeda</option>
-                                        <!-- Adicione mais opções conforme necessário -->
                                     </select>
                                 </div>
                             </div>
 
                             <!-- Botão de conversão -->
                             <div class="mt-4 text-center">
-                                <button type="submit" class="btn btn-primary w-100">Converter</button>
+                                <button id="submit" class="btn btn-primary w-100">Converter</button>
                             </div>
-                        </form>
+                        </div>
+
+                        <!-- Campo do resultado -->
+                        <p id="result" class="p text-white py-2 bg-dark mt-3 text-center"></p>
+
+                        <!-- Nota de esclarecimento -->
+                        <p class="mt-5 text-secondary">Nota: Como a API de conversão utilizada é gratuita, os valores são atualizados diariamente, o que significa que a precisão pode variar. O objetivo deste projeto é demonstrar o uso de uma API e o consumo de seus dados.</p>
                     </div>
                 </div>
             </div>

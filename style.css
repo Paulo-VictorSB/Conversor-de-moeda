@@ -1,48 +1,61 @@
-.awaitApi{
-  position: fixed; /* Ou absolute, dependendo do caso */
-  top: 0; /* Posiciona a div no topo da tela */
-  left: 0; /* Posiciona a div no canto esquerdo */
-  width: 100vw; /* Largura total da janela */
-  height: 100vh; /* Altura total da janela */
-  background-color: rgba(0, 0, 0, 0.918); /* Fundo semi-transparente */
-  z-index: 9999; /* Valor alto para garantir que estará na frente */
-  display: none;
-  align-items: center;
-  justify-content: center;
+.awaitApi {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.918);
+    z-index: 2;
+    display: none;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Container do loader */
 .loader {
-display: flex;
-gap: 8px;
+    display: flex;
+    gap: 8px;
 }
 
 /* Bolinhas */
 .loader div {
-width: 16px;
-height: 16px;
-background: #007bff;
-border-radius: 50%;
-animation: bounce 0.6s infinite ease-in-out;
+    width: 16px;
+    height: 16px;
+    background: #007bff;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite ease-in-out;
 }
 
 /* Atraso de cada bolinha */
 .loader div:nth-child(1) {
-animation-delay: 0s;
-}
-.loader div:nth-child(2) {
-animation-delay: 0.2s;
-}
-.loader div:nth-child(3) {
-animation-delay: 0.4s;
+    animation-delay: 0s;
 }
 
-  /* Animação */
-  @keyframes bounce {
-    0%, 80%, 100% {
-      transform: scale(0);
+.loader div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loader div:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Animação */
+@keyframes bounce {
+
+    0%,
+    80%,
+    100% {
+        transform: scale(0);
     }
+
     40% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
+}
+
+/* O Resultado fica escondido no ínicio, passando a ser mostrando se houver algum resultado. */
+
+#result {
+    border-radius: .375rem;
+    display: none;
+}
